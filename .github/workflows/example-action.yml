@@ -1,0 +1,17 @@
+name: Example Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 21f3001166@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
